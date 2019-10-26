@@ -7,6 +7,13 @@ Docker is available in three tiers:
 
 ## Docker overview
 * Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
+* Containerization is increasingly popular because containers are:
+ * Flexible: Even the most complex applications can be containerized.
+ * Lightweight: Containers leverage and share the host kernel, making them much more efficient in terms of system resources than virtual machines.
+ * Portable: You can build locally, deploy to the cloud, and run anywhere.
+ * Loosely coupled: Containers are highly self sufficient and encapsulated, allowing you to replace or upgrade one without disrupting others.
+ * Scalable: You can increase and automatically distribute container replicas across a datacenter.
+ * Secure: Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
 
 ## Docker Engine
 * Docker Engine is a client-server application with these major components:
@@ -25,6 +32,9 @@ Docker is available in three tiers:
 ## CONTAINERS
 * A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
 * You can connect a container to one or more networks, attach storage to it, <b> or even create a new image based on its current state. </b>
+* Fundamentally, a container is nothing but a running process, with some added encapsulation features applied to it in order to keep it isolated from the host and from other containers.
+* One of the most important aspects of container isolation is that each container interacts with its own, private filesystem; this filesystem is provided by a Docker image.
+* An image includes everything needed to run an application -- the code or binary, runtimes, dependencies, and any other filesystem objects required.
 
 ## SERVICES
 * Services allow you to scale containers across multiple Docker daemons, which all work together as a swarm with multiple managers and workers.
