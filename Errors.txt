@@ -1,0 +1,9 @@
+######## Start Block 1 ##########
+docker run -d varun_app:latest -p 9087:80
+Give following error:
+starting container process caused "exec: \"-p\": executable file not found in $PATH": unknown.
+
+But this works fine.
+docker run -d -p 9087:80 varun_app:latest
+
+######## End Block 1 ##########
